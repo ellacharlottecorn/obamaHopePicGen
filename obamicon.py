@@ -12,6 +12,7 @@ image_list = my_image.getdata() #each pixel is represented in the form (red valu
 image_list = list(image_list) #Turns the sequence above into a list. The list can be iterated through in a loop.
 my_image.show()
 
+# change pic colors
 recolored = [] #list that will hold the pixel data for the new image.
 
 for pixel in image_list:
@@ -27,9 +28,6 @@ for pixel in image_list:
         recolored.append((112, 150, 158))
     elif pixIntense > 546:
         recolored.append((252, 227, 166))
-
-#YOUR CODE to loop through the original list of pixels and build a new list based on intensity should go here.
-
 
 
 # Create a new image using the recolored list. Display and save the image.
